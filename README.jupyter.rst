@@ -1,8 +1,9 @@
 
-add a jupyter notebook to practice https://ljdursi.github.io/beyond-single-core-R/#/26
+Container for R with libraries and data from Jonathan Dursi "Beyond Single-Core R" tutorial
+This version add a jupyter notebook to practice 
+Original slides at https://ljdursi.github.io/beyond-single-core-R/#/1
 
-Container for R with libraries for LBNL Energy Technology Area project
-Now with Jupyter Notebook server
+Usage
 
 Start jupyter notebook web server (on specific port, eg 6997):
 
@@ -10,9 +11,10 @@ docker run -p 6997:6997 -v "$PWD":/mnt -it --entrypoint=/opt/conda/bin/jupyter  
 
 Point web browser to something like
   http://127.0.0.1:6997/ 
-  http://hima.lbl.gov:6997/ 
 and paste the token URL link shown on the terminal console
 
+
+ /mnt is a mount of the current dir (PWD) where you started the docker process, and files written there will persist after the container is terminated.  (Other files inside the container are ephemeral!)
 
 ~~~~
 
@@ -28,7 +30,3 @@ to try out the examples.
 tin
 2020.0926
 
-
-original author Jonathan Dursi
-web page: 
-https://ljdursi.github.io/beyond-single-core-R/#/1
