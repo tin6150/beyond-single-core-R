@@ -1,4 +1,5 @@
 
+add a jupyter notebook to practice https://ljdursi.github.io/beyond-single-core-R/#/26
 
 Container for R with libraries for LBNL Energy Technology Area project
 Now with Jupyter Notebook server
@@ -26,3 +27,8 @@ to try out the examples.
 
 tin
 2020.0926
+
+
+original author Jonathan Dursi
+web page: 
+https://ljdursi.github.io/beyond-single-core-R/#/1
