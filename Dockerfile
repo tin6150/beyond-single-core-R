@@ -29,7 +29,8 @@ RUN echo  ''  ;\
     date                                     | tee -a _TOP_DIR_OF_CONTAINER_  ;\
     apt-get update ;\
     # ubuntu:
-    apt-get -y --quiet install git file wget gzip bash tcsh zsh less vim bc tmux screen xterm uptime ;\
+    apt-get -y --quiet install git file wget gzip bash tcsh zsh less vim bc tmux screen xterm procps ;\
+    # debian use procps instead of uptime for package name
     # tidyverse complain about missing libs, these helped (it is not a minimal set)
     apt-get -y --quiet install units libudunits2-dev gdal-bin gdal-data libgdal-dev libgdal26  r-cran-rgdal  curl r-cran-rcurl libcurl4 libcurl4-openssl-dev openssl libssl-dev r-cran-httr libgeos-dev  r-cran-xml r-cran-xml2 libxml2 libxml2-dev  ;\
     # pre-req for anaconda (jupyter notebook server)
@@ -84,7 +85,7 @@ RUN echo ''  ;\
 RUN  cd / \
   && touch _TOP_DIR_OF_CONTAINER_  \
   && TZ=PST8PDT date  >> _TOP_DIR_OF_CONTAINER_  \
-  && echo  "Dockerfile 2020.0926 jupyter IRkernel uptime"  >> _TOP_DIR_OF_CONTAINER_   \
+  && echo  "Dockerfile 2020.0926 2326 jupyter IRkernel procps"  >> _TOP_DIR_OF_CONTAINER_   \
   && echo  "Grand Finale"
 
 #- ENV TZ America/Los_Angeles  

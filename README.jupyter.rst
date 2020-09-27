@@ -1,4 +1,5 @@
 
+add a jupyter notebook to practice https://ljdursi.github.io/beyond-single-core-R/#/26
 
 in branch jupyter
 
@@ -10,3 +11,8 @@ to try out the examples.
 
 tin
 2020.0926
+
+
+original author Jonathan Dursi
+web page: 
+https://ljdursi.github.io/beyond-single-core-R/#/1
