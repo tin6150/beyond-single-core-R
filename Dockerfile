@@ -85,7 +85,7 @@ RUN echo ''  ;\
 RUN  cd / \
   && touch _TOP_DIR_OF_CONTAINER_  \
   && TZ=PST8PDT date  >> _TOP_DIR_OF_CONTAINER_  \
-  && echo  "Dockerfile 2020.0926 2326 jupyter IRkernel procps"  >> _TOP_DIR_OF_CONTAINER_   \
+  && echo  "Dockerfile 2020.0927 0032 jupyter IRkernel procps"  >> _TOP_DIR_OF_CONTAINER_   \
   && echo  "Grand Finale"
 
 #- ENV TZ America/Los_Angeles  
